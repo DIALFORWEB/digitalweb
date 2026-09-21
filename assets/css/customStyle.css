@@ -1,0 +1,174 @@
+.header .logo img {
+    max-height: 66px;
+    margin-right: 8px;
+}
+body,p,a,span{
+    font-size: 15px;
+    font-weight: 500;
+}
+.linear-text-gradient,h1 {
+                    background: linear-gradient(180deg, #00a1d5 0%, #00060a 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+            .hero {    position: relative;
+    min-height: 65vh;
+    overflow: hidden;
+    color: #fff;
+    background: url(../img/6289.jpg);
+    /* background: radial-gradient(circle at 75% 25%, rgba(53, 219, 255, .35), transparent 25%), linear-gradient(115deg, #e000ff 0%, #a42cff 28%, #6449f5 57%, #159cf5 100%); */
+    background-size: 100% 100%;
+    background-position: center;
+}
+.hero p {
+    color: #333;
+    margin-top: 1rem;
+}
+.hero .btn-get-started{
+    background:var(--gradient-button);
+}
+.work-process .steps-item {
+    background: var(--surface-color);
+    border-radius: 0;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 9px 
+color-mix(in srgb, var(--default-color), transparent 78%);
+}
+
+ .rounded-card {
+      border-radius: var(--rounded);
+      box-shadow: var(--shadow);
+      background-color: white;
+      transition: box-shadow var(--transition-time) ease, transform var(--transition-time) ease;
+    }
+    .rounded-card:hover {
+      box-shadow: 0 8px 20px rgba(20, 110, 245, 0.2);
+      transform: translateY(-4px);
+    }
+    /* Service Cards */
+    .service-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .service-card a {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: color var(--transition-time) ease;
+    }
+    .service-card a:hover {
+      text-decoration: underline;
+    }
+footer#footer img.logo-main {
+    width: 170px;
+}
+.footer {
+    /* color: #fff; */
+    position: relative;
+    background: #f2f6fd;
+    /* background: linear-gradient(334deg, rgba(2, 0, 36, 1) 0%, rgba(4, 30, 64, 1) 35%, rgb(0 120 145) 100%); */
+}
+/* .footer-links h4{
+     color: #fff !important;
+}
+.footer-links ul li a {
+     color: #fff !important;
+}
+footer#footer h4{
+     color: #fff !important;
+}
+.footer .social-links a {
+    color: #fff;
+    border-color: var(--accent-color);
+} */
+.page-title {
+    margin-top: 5rem;
+    background: #2067d90f url(../img/bg/bg--1.png);
+    background-position: right;
+    background-size: cover;
+}
+p {
+    font-size: 15px;
+    font-weight: 500;
+}
+section#projects .card {
+    border-radius: 0;
+    border: none;
+    box-shadow: 2px 2px 5px #5c5b5b;
+}
+section#projects img {
+    height: 400px;
+    object-fit: cover;
+}
+span.sub-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #9d9d9d;
+}
+#about-pricing .pricing-item span {
+    min-height: 10rem;
+}
+#about-pricing .pricing .pricing-item {
+ 
+    padding: 30px 40px 10px;
+    height: auto;
+}
+.abt-img:after {
+    content: '';
+    position: absolute;
+    width: 4%;
+    height: 90%;
+    background: #000000;
+    top: 5%;
+    z-index: 0;
+    left: 96%;
+}
+.abt-img {
+    position: relative;
+    z-index: 222;
+}
+ul.service-card li {
+    background: #fff;
+    opacity: 1;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 4px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgb(209 25 34 / 11%);
+}
+.pricing ul i {
+    color: var(--accent-color);
+    font-size: 24px;
+    padding-right: 3px;
+    margin-right: 1rem;
+}
+.listing-item {
+    padding: 1rem 2rem 2rem;
+    box-shadow: 2px 2px 10px #d1192226;
+    border: 1px solid #d1192226;
+    border-radius: 7px;
+        height: 100%;
+}
+.listing-item h3.legend {
+    position: relative;
+    top: -2rem;
+    background: var(--accent-color);
+    display: inline;
+    padding: 1rem;
+    color: #fff;
+}
+.brand-card {
+    background: #e7eaee !important;
+    padding: 1rem 2rem !important;
+    /* margin-bottom: 2rem; */
+    box-shadow: 2px 2px 5px #ccc;
+}
+ .header {
+    --background-color: #ffffff !important;}
