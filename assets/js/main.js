@@ -15,6 +15,7 @@
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
+    if (!selectHeader) return;
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
     window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
   }
@@ -25,39 +26,43 @@
   /**
    * Mobile nav toggle
    */
-  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-
   function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
+    const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+    if (mobileNavToggleBtn) {
+      mobileNavToggleBtn.classList.toggle('bi-list');
+      mobileNavToggleBtn.classList.toggle('bi-x');
+    }
   }
-  if (mobileNavToggleBtn) {
-    mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
-  }
+
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('.mobile-nav-toggle')) {
+      mobileNavToogle();
+    }
+  });
 
   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('#navmenu a')) {
       if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
-    });
-
+    }
   });
 
   /**
    * Toggle mobile nav dropdowns
    */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+  document.addEventListener('click', function(e) {
+    const toggleBtn = e.target.closest('.navmenu .toggle-dropdown');
+    if (toggleBtn) {
       e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      toggleBtn.parentNode.classList.toggle('active');
+      toggleBtn.parentNode.nextElementSibling.classList.toggle('dropdown-active');
       e.stopImmediatePropagation();
-    });
+    }
   });
 
   /**
@@ -210,9 +215,8 @@
   /**
    * Navmenu Scrollspy
    */
-  let navmenulinks = document.querySelectorAll('.navmenu a');
-
   function navmenuScrollspy() {
+    let navmenulinks = document.querySelectorAll('.navmenu a');
     navmenulinks.forEach(navmenulink => {
       if (!navmenulink.hash) return;
       let section = document.querySelector(navmenulink.hash);

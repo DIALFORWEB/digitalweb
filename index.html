@@ -129,10 +129,10 @@
 
               <!-- Tech stack icons -->
               <div class="tech-icons">
-                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
-                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" />
-                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" />
-                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg" alt="AWS Cloud" title="Cloud" />
+                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/react/react-original.svg" alt="React" title="React" />
+                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" />
+                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" />
+                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS Cloud" title="Cloud" />
               </div>
 
             </div>
@@ -1392,6 +1392,8 @@ London, SE1 8PB</p>
       carouselElement.addEventListener('mouseleave', resumeProgress);
       carouselElement.addEventListener('focusin', pauseProgress);
       carouselElement.addEventListener('focusout', resumeProgress);
+      carouselElement.addEventListener('touchstart', pauseProgress, {passive: true});
+      carouselElement.addEventListener('touchend', resumeProgress, {passive: true});
 
       // Start initially
       startProgress();
@@ -1399,21 +1401,23 @@ London, SE1 8PB</p>
 
       // Dark/light toggle functionality
       const toggle = document.getElementById('darkToggle');
-      toggle.addEventListener('click', () => {
-        if(document.documentElement.classList.contains('dark')) {
-          document.documentElement.classList.remove('dark');
-          document.body.classList.add('light');
-        } else {
-          document.documentElement.classList.add('dark');
-          document.body.classList.remove('light');
-        }
-      });
-      toggle.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          toggle.click();
-        }
-      });
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          if(document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            document.body.classList.add('light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.body.classList.remove('light');
+          }
+        });
+        toggle.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggle.click();
+          }
+        });
+      }
 
     })();
   </script>
