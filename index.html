@@ -1,1076 +1,872 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Web Development UK</title>
+  <meta name="description" content="Web Development UK provides website development, software development, mobile app development and branding solutions.">
+  <meta name="keywords" content="web development, software development, mobile app development, website design, UK">
 
   <!-- Favicons -->
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
+
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS -->
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
+
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/customStyle.css" rel="stylesheet">
-
+  <link href="assets/css/hero.css" rel="stylesheet">
 
 </head>
 
 <body class="index-page">
-<div id="header-container"></div>
-  <!-- <header id="header" class="header d-flex align-items-center fixed-top d-none">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-   
-        <div class="sitename">
-          <img src="assets/img/logo.svg" class="logo-main">
-        </div>
-      </a>
+  <!-- Header -->
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="" class="active">Home</a></li>
-          <li><a href="">About</a></li>  
-           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li class="dropdown"><a href="#">Mobile App Development</a></li>
-              <li><a href="#">Cloud Solutions</a></li>
-              <li><a href="#">UI/UX Design</a></li>
-            </ul>
-          </li> 
-          <li><a href="#portfolio">Portfolio</a></li> -->
-          <!-- 
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <!-- <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="#about">Get Started</a>
-
-    </div>
-  </header> -->
+  <div id="header-container"></div>
 
   <main class="main">
-    <!-- <div id="carousel"></div> -->
-     <link rel="stylesheet" href="assets/css/hero.css">
-  <!-- Dark/Light Mode Toggle -->
 
-  <!-- Hero Carousel -->
-  <div id="heroCarousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="8000" data-bs-pause="hover" aria-label="Web Development Hero Carousel">
+```
+<!-- ======================================================
+     HERO CAROUSEL
+======================================================= -->
 
-    <!-- Slides wrapper -->
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="Next-Gen Web Apps Built for Infinite Scale">
+<div
+  id="heroCarousel"
+  class="carousel carousel-fade"
+  data-bs-ride="carousel"
+  data-bs-interval="8000"
+  data-bs-pause="hover"
+  aria-label="Web Development Hero Carousel">
 
-        <div class="carousel-content container d-flex flex-column flex-lg-row align-items-center justify-content-between position-relative">
+  <div class="carousel-inner">
 
-          <div class="text-side">
-            <h1 class="headline animate-fadeup">Next-Gen Web Apps Built for Infinite Scale</h1>
-            <p class="subheadline animate-fadeup" style="transition-delay:0.2s;">
-              We engineer high-speed, secure, and resilient web platforms powered by AI and modern full-stack frameworks.
-            </p>
+    <!-- Slide 1 -->
+    <div
+      class="carousel-item active"
+      role="group"
+      aria-roledescription="slide"
+      aria-label="Next-Gen Web Apps Built for Infinite Scale">
 
-            <div class="d-flex gap-3 flex-wrap">
-              <button class="btn btn-glow-primary animate-fadeup btn-stagger-1" tabindex="0">Start Your Project →</button>
-              <button class="btn btn-glass-secondary animate-fadeup btn-stagger-2" tabindex="0">View Architecture</button>
-            </div>
+      <div class="carousel-content container d-flex flex-column flex-lg-row align-items-center justify-content-between position-relative">
 
-            <div class="glass-card mt-4 animate-fadeup" style="max-width: 280px;" aria-label="Key Features Highlights">
-              <ul style="list-style:none; padding:0; margin:0;">
-                <li>🚀 AI optimized full-stack deployment</li>
-                <li>⚡ 99.8% uptime guarantee</li>
-                <li>🔒 Enterprise-grade security</li>
-              </ul>
-            </div>
+        <div class="text-side">
+
+          <h1 class="headline animate-fadeup">
+            Next-Gen Web Apps Built for Infinite Scale
+          </h1>
+
+          <p class="subheadline animate-fadeup" style="transition-delay:0.2s;">
+            We engineer high-speed, secure, and resilient web platforms powered by AI and modern full-stack frameworks.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap">
+
+            <button
+              type="button"
+              class="btn btn-glow-primary animate-fadeup btn-stagger-1">
+              Start Your Project →
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-glass-secondary animate-fadeup btn-stagger-2">
+              View Architecture
+            </button>
+
           </div>
 
-          <div class="visual-side" aria-hidden="true">
-            <div class="visual-mockup position-relative">
-              <img src="assets/img/bnr-2.jpg" class="img-fluid">
-              <!-- Floating badges near hero -->
-              <div class="floating-badge" style="top: 15px; left: 20px; animation-delay: 0s;">99.8% Uptime</div>
-              <div class="floating-badge" style="top: 120px; right: 25px; background: linear-gradient(135deg, var(--neon-purple), var(--neon-emerald)); animation-delay: 2s;">AI-Powered Code</div>
-              <div class="floating-badge" style="bottom: 20px; left: 60px; background: linear-gradient(135deg, var(--neon-emerald), var(--neon-cyan)); animation-delay: 1s;">10x Faster Build</div>
+          <div
+            class="glass-card mt-4 animate-fadeup"
+            style="max-width:280px;"
+            aria-label="Key Features Highlights">
 
-              <!-- Tech stack icons -->
-              <div class="tech-icons">
-                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/react/react-original.svg" alt="React" title="React" />
-                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" />
-                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" />
-                <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS Cloud" title="Cloud" />
-              </div>
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li>🚀 AI optimized full-stack deployment</li>
+              <li>⚡ 99.8% uptime guarantee</li>
+              <li>🔒 Enterprise-grade security</li>
+            </ul>
 
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="Turn Complex Ideas into High-Converting SaaS">
-
-        <div class="carousel-content container d-flex flex-column flex-lg-row align-items-center justify-content-between position-relative">
-
-          <div class="text-side">
-            <h1 class="headline animate-fadeup">Turn Complex Ideas into High-Converting SaaS</h1>
-            <p class="subheadline animate-fadeup" style="transition-delay:0.2s;">
-              From MVP to enterprise platform—we craft tailored software designed to accelerate revenue and scale user growth.
-            </p>
-
-            <div class="d-flex gap-3 flex-wrap">
-              <button class="btn btn-glow-primary animate-fadeup btn-stagger-1" tabindex="0">Explore SaaS Solutions →</button>
-              <button class="btn btn-glass-secondary animate-fadeup btn-stagger-2" tabindex="0">Book a Demo</button>
-            </div>
-
-            <div class="glass-card mt-4 animate-fadeup" style="max-width: 300px;" aria-label="SaaS Features Highlights">
-              <ul style="list-style:none; padding:0; margin:0;">
-                <li>📈 Real-time analytics dashboard</li>
-                <li>🔄 Continuous feature delivery</li>
-                <li>📊 User-growth optimization tools</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="visual-side" aria-hidden="true">
-            <div class="visual-mockup position-relative" style="background: linear-gradient(135deg, #7000FF 0%, #00FF85 100%)">
- <img src="assets/img/bnr-3.jpg" class="img-fluid">
-              <!-- Floating badges -->
-              <div class="floating-badge" style="top: 20px; left: 22px; animation-delay: 1s;">Rising Growth 📈</div>
-              <div class="floating-badge" style="bottom: 25px; right: 18px; background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple)); animation-delay: 3s;">Real-Time Metrics</div>
-
-              <!-- Chart mockup (SVG shaped bars) -->
-              <svg width="100%" height="150" viewBox="0 0 320 150" style="position:absolute; bottom: 10px; right: 40px; opacity: 0.4; filter: drop-shadow(0 0 6px var(--neon-emerald));">
-                <rect x="10" y="90" width="30" height="50" fill="var(--neon-cyan)" rx="5" ry="5"/>
-                <rect x="60" y="70" width="30" height="70" fill="var(--neon-purple)" rx="5" ry="5"/>
-                <rect x="110" y="50" width="30" height="90" fill="var(--neon-emerald)" rx="5" ry="5"/>
-                <rect x="160" y="30" width="30" height="110" fill="var(--neon-cyan)" rx="5" ry="5"/>
-                <rect x="210" y="70" width="30" height="70" fill="var(--neon-purple)" rx="5" ry="5"/>
-                <rect x="260" y="40" width="30" height="100" fill="var(--neon-emerald)" rx="5" ry="5"/>
-              </svg>
-            </div>
           </div>
 
         </div>
-      </div>
 
-      <!-- Slide 3 -->
-      <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="Ultra-Fast Headless Stores that Out-Convert Competitors">
+        <div class="visual-side" aria-hidden="true">
 
-        <div class="carousel-content container d-flex flex-column flex-lg-row align-items-center justify-content-between position-relative">
+          <div class="visual-mockup position-relative">
 
-          <div class="text-side">
-            <h1 class="headline animate-fadeup">Ultra-Fast Headless Stores that Out-Convert Competitors</h1>
-            <p class="subheadline animate-fadeup" style="transition-delay:0.2s;">
-              Engineered for sub-second load times, dynamic personalization, and seamless payment integrations.
-            </p>
+            <img
+              src="assets/img/bnr-2.jpg"
+              class="img-fluid"
+              alt="Web development">
 
-            <div class="d-flex gap-3 flex-wrap">
-              <button class="btn btn-glow-primary animate-fadeup btn-stagger-1" tabindex="0">Scale Your Store →</button>
-              <button class="btn btn-glass-secondary animate-fadeup btn-stagger-2" tabindex="0">Case Studies</button>
+            <div
+              class="floating-badge"
+              style="top:15px;left:20px;animation-delay:0s;">
+              99.8% Uptime
             </div>
 
-            <div class="glass-card mt-4 animate-fadeup" style="max-width: 280px;" aria-label="E-commerce Features Highlights">
-              <ul style="list-style:none; padding:0; margin:0;">
-                <li>⚡ 0.3s average load time</li>
-                <li>🔐 PCI-DSS Secure Payments</li>
-                <li>🎯 Dynamic Personalization</li>
-              </ul>
+            <div
+              class="floating-badge"
+              style="top:120px;right:25px;background:linear-gradient(135deg,var(--neon-purple),var(--neon-emerald));animation-delay:2s;">
+              AI-Powered Code
             </div>
-          </div>
 
-          <div class="visual-side" aria-hidden="true">
-            <div class="visual-mockup position-relative" style="background: linear-gradient(135deg, var(--neon-emerald), var(--neon-cyan))">
-              <img src="assets/img/bnr-4.jpg" class="img-fluid">
-              <!-- Floating badges -->
-              <div class="floating-badge" style="top: 25px; right: 20px; background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan)); animation-delay: 2s;">0.3s Load Time</div>
-              <div class="floating-badge" style="bottom: 30px; left: 30px; background: linear-gradient(135deg, var(--neon-emerald), var(--neon-purple)); animation-delay: 1s;">PCI-DSS Secure</div>
+            <div
+              class="floating-badge"
+              style="bottom:20px;left:60px;background:linear-gradient(135deg,var(--neon-emerald),var(--neon-cyan));animation-delay:1s;">
+              10x Faster Build
+            </div>
 
-              <!-- Checkout mockup: simplified card shape + buttons -->
-              <!-- <div aria-hidden="true" style="position:absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 85%; height: 160px; background: rgba(255 255 255 / 0.15); border-radius: 18px; backdrop-filter: blur(15px); box-shadow: 0 0 25px var(--neon-emerald);">
-                <div style="margin: 1rem 2rem; color: white; font-weight: 600; font-family: var(--font-secondary); line-height: 1.25; text-shadow: 0 0 14px rgba(0, 255, 133, 0.7);">
-                  <p style="font-size: 1.3rem; margin-bottom: 0.3rem;">Checkout</p>
-                  <p style="font-size: 0.9rem;">Visa •••• 1234</p>
-                  <p style="font-size: 0.9rem; margin-top: 8px;">Total: <strong>$249.99</strong></p>
-                </div>
-                <button style="position: absolute; bottom: 20px; right: 20px; background: var(--neon-emerald); border-radius: 40px; border: none; padding: 0.6rem 1.6rem; color: #000; font-weight: 700; font-family: var(--font-primary); cursor: pointer; box-shadow: 0 0 18px var(--neon-emerald);">Pay Now</button>
-              </div> -->
+            <div class="tech-icons">
+
+              <img
+                class="tech-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/react/react-original.svg"
+                alt="React"
+                title="React">
+
+              <img
+                class="tech-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nextjs/nextjs-original.svg"
+                alt="Next.js"
+                title="Next.js">
+
+              <img
+                class="tech-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+                title="Node.js">
+
+              <img
+                class="tech-icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                alt="AWS Cloud"
+                title="Cloud">
 
             </div>
+
           </div>
 
         </div>
+
       </div>
+
     </div>
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
 
-    <!-- Progress bar & slide counter -->
-    <div class="container d-flex flex-column align-items-center mt-4" style="max-width: 1200px;">
-      <div class="progress-container" aria-hidden="true" style="width: 95%;">
-        <div class="animated-progress" style="width: 0%;"></div>
+    <!-- Slide 2 -->
+    <div
+      class="carousel-item"
+      role="group"
+      aria-roledescription="slide"
+      aria-label="Turn Complex Ideas into High-Converting SaaS">
+
+      <div class="carousel-content container d-flex flex-column flex-lg-row align-items-center justify-content-between position-relative">
+
+        <div class="text-side">
+
+          <h1 class="headline animate-fadeup">
+            Turn Complex Ideas into High-Converting SaaS
+          </h1>
+
+          <p class="subheadline animate-fadeup" style="transition-delay:0.2s;">
+            From MVP to enterprise platform—we craft tailored software designed to accelerate revenue and scale user growth.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap">
+
+            <button
+              type="button"
+              class="btn btn-glow-primary animate-fadeup btn-stagger-1">
+              Explore SaaS Solutions →
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-glass-secondary animate-fadeup btn-stagger-2">
+              Book a Demo
+            </button>
+
+          </div>
+
+          <div
+            class="glass-card mt-4 animate-fadeup"
+            style="max-width:300px;"
+            aria-label="SaaS Features Highlights">
+
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li>📈 Real-time analytics dashboard</li>
+              <li>🔄 Continuous feature delivery</li>
+              <li>📊 User-growth optimization tools</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="visual-side" aria-hidden="true">
+
+          <div
+            class="visual-mockup position-relative"
+            style="background:linear-gradient(135deg,#7000FF 0%,#00FF85 100%);">
+
+            <img
+              src="assets/img/bnr-3.jpg"
+              class="img-fluid"
+              alt="SaaS development">
+
+            <div
+              class="floating-badge"
+              style="top:20px;left:22px;animation-delay:1s;">
+              Rising Growth 📈
+            </div>
+
+            <div
+              class="floating-badge"
+              style="bottom:25px;right:18px;background:linear-gradient(135deg,var(--neon-cyan),var(--neon-purple));animation-delay:3s;">
+              Real-Time Metrics
+            </div>
+
+            <svg
+              width="100%"
+              height="150"
+              viewBox="0 0 320 150"
+              style="position:absolute;bottom:10px;right:40px;opacity:0.4;filter:drop-shadow(0 0 6px var(--neon-emerald));">
+
+              <rect x="10" y="90" width="30" height="50" fill="var(--neon-cyan)" rx="5" ry="5"/>
+              <rect x="60" y="70" width="30" height="70" fill="var(--neon-purple)" rx="5" ry="5"/>
+              <rect x="110" y="50" width="30" height="90" fill="var(--neon-emerald)" rx="5" ry="5"/>
+              <rect x="160" y="30" width="30" height="110" fill="var(--neon-cyan)" rx="5" ry="5"/>
+              <rect x="210" y="70" width="30" height="70" fill="var(--neon-purple)" rx="5" ry="5"/>
+              <rect x="260" y="40" width="30" height="100" fill="var(--neon-emerald)" rx="5" ry="5"/>
+
+            </svg>
+
+          </div>
+
+        </div>
+
       </div>
-      <div class="slide-counter" aria-live="polite" aria-atomic="true" aria-relevant="text">01 / 03</div>
+
+    </div>
+
+
+    <!-- Slide 3 -->
+    <div
+      class="carousel-item"
+      role="group"
+      aria-roledescription="slide"
+      aria-label="Ultra-Fast Headless Stores that Out-Convert Competitors">
+
+      <div class="carousel-content container d-flex flex-column flex-lg-row align-items-center justify-content-between position-relative">
+
+        <div class="text-side">
+
+          <h1 class="headline animate-fadeup">
+            Ultra-Fast Headless Stores that Out-Convert Competitors
+          </h1>
+
+          <p class="subheadline animate-fadeup" style="transition-delay:0.2s;">
+            Engineered for sub-second load times, dynamic personalization, and seamless payment integrations.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap">
+
+            <button
+              type="button"
+              class="btn btn-glow-primary animate-fadeup btn-stagger-1">
+              Scale Your Store →
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-glass-secondary animate-fadeup btn-stagger-2">
+              Case Studies
+            </button>
+
+          </div>
+
+          <div
+            class="glass-card mt-4 animate-fadeup"
+            style="max-width:280px;"
+            aria-label="E-commerce Features Highlights">
+
+            <ul style="list-style:none;padding:0;margin:0;">
+              <li>⚡ 0.3s average load time</li>
+              <li>🔐 PCI-DSS Secure Payments</li>
+              <li>🎯 Dynamic Personalization</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="visual-side" aria-hidden="true">
+
+          <div
+            class="visual-mockup position-relative"
+            style="background:linear-gradient(135deg,var(--neon-emerald),var(--neon-cyan));">
+
+            <img
+              src="assets/img/bnr-4.jpg"
+              class="img-fluid"
+              alt="Headless ecommerce">
+
+            <div
+              class="floating-badge"
+              style="top:25px;right:20px;background:linear-gradient(135deg,var(--neon-purple),var(--neon-cyan));animation-delay:2s;">
+              0.3s Load Time
+            </div>
+
+            <div
+              class="floating-badge"
+              style="bottom:30px;left:30px;background:linear-gradient(135deg,var(--neon-emerald),var(--neon-purple));animation-delay:1s;">
+              PCI-DSS Secure
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
   </div>
-    <!-- Hero Section -->
-    <section id="hero" class="hero section d-none">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Better Solutions For Your Business</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-          </div>
-        </div>
+
+
+  <!-- Carousel Controls -->
+
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="prev"
+    aria-label="Previous slide">
+
+    <span
+      class="carousel-control-prev-icon"
+      aria-hidden="true">
+    </span>
+
+  </button>
+
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="next"
+    aria-label="Next slide">
+
+    <span
+      class="carousel-control-next-icon"
+      aria-hidden="true">
+    </span>
+
+  </button>
+
+
+  <!-- Progress -->
+
+  <div
+    class="container d-flex flex-column align-items-center mt-4"
+    style="max-width:1200px;">
+
+    <div
+      class="progress-container"
+      aria-hidden="true"
+      style="width:95%;">
+
+      <div
+        class="animated-progress"
+        style="width:0%;">
       </div>
 
-    </section><!-- /Hero Section -->
+    </div>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background d-none">
+    <div
+      class="slide-counter"
+      aria-live="polite"
+      aria-atomic="true">
+      01 / 03
+    </div>
 
-      <div class="container" data-aos="zoom-in">
+  </div>
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 120
-                },
-                "1200": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div>
-          </div>
-        </div>
+</div>
 
-      </div>
 
-    </section><!-- /Clients Section -->
+<!-- ======================================================
+     ABOUT
+======================================================= -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+<section id="about" class="about section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="linear-text-gradient">About Us</h2>
-      </div><!-- End Section Title -->
+  <div
+    class="container section-title"
+    data-aos="fade-up">
 
-      <div class="container">
+    <h2 class="linear-text-gradient">
+      About Us
+    </h2>
 
-        <div class="row gy-4">
+  </div>
 
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>Founded in 2022, Web Development UK is a digital solutions company dedicated to helping businesses turn
-              ambitious ideas into powerful digital experiences. Since our inception, we have successfully delivered
-              approximately 200 projects, helping businesses build their digital presence, streamline operations and
-              bring innovative ideas to life.</p>
+  <div class="container">
 
-            <p>We specialise in website design, website development, bespoke software development, mobile app
-              development and branding. By combining creative thinking with technical expertise, we develop tailored
-              digital solutions that align with our clients' business objectives and evolving needs.</p>
+    <div class="row gy-4">
 
-            <p>From startups building their first digital product to established businesses looking to modernise their
-              operations, we work collaboratively to create solutions that are functional, user-focused and built for
-              long-term growth.</p>
+      <div
+        class="col-lg-6 content"
+        data-aos="fade-up"
+        data-aos-delay="100">
 
-              <a href="about.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
+        <p>
+          Founded in 2022, Web Development UK is a digital solutions company dedicated to helping businesses turn ambitious ideas into powerful digital experiences. Since our inception, we have successfully delivered approximately 200 projects, helping businesses build their digital presence, streamline operations and bring innovative ideas to life.
+        </p>
 
-          <div class="col-lg-6 abt-img" data-aos="fade-up" data-aos-delay="200">
-           <img src="assets/img/about.jpg" class="img-fluid">
-          </div>
+        <p>
+          We specialise in website design, website development, bespoke software development, mobile app development and branding. By combining creative thinking with technical expertise, we develop tailored digital solutions that align with our clients' business objectives and evolving needs.
+        </p>
 
-        </div>
+        <p>
+          From startups building their first digital product to established businesses looking to modernise their operations, we work collaboratively to create solutions that are functional, user-focused and built for long-term growth.
+        </p>
+
+        <a
+          href="about.html"
+          class="read-more">
+
+          <span>Read More</span>
+          <i class="bi bi-arrow-right"></i>
+
+        </a>
 
       </div>
 
-    </section><!-- /About Section -->
+      <div
+        class="col-lg-6 abt-img"
+        data-aos="fade-up"
+        data-aos-delay="200">
 
-    <!-- Why Us Section -->
-    <section id="why-us" class="section why-us light-background d-none" data-builder="section">
+        <img
+          src="assets/img/about.jpg"
+          class="img-fluid"
+          alt="About Web Development UK">
 
-      <div class="container">
+      </div>
 
-        <div class="row gy-4">
+    </div>
 
-          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+  </div>
 
-            <div class="content " data-aos="fade-up" data-aos-delay="100">
-              <h3><span>Eum ipsam laborum deleniti </span><strong>velit pariatur architecto aut nihil</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
+</section>
 
-            <div class="faq-container " data-aos="fade-up" data-aos-delay="200">
 
-              <div class="faq-item faq-active">
+<!-- ======================================================
+     SERVICES
+======================================================= -->
 
-                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+<section
+  id="services"
+  class="services section light-background">
 
-              <div class="faq-item">
-                <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+  <div
+    class="container section-title"
+    data-aos="fade-up">
 
-              <div class="faq-item">
-                <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+    <h2 class="linear-text-gradient">
+      Services
+    </h2>
 
-            </div>
+    <p>
+      Your Partner in Digital Transformation
+    </p>
 
+  </div>
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Service 1 -->
+      <div
+        class="col-xl-3 col-md-6 d-flex"
+        data-aos="fade-up"
+        data-aos-delay="100">
+
+        <div class="service-item position-relative">
+
+          <div class="icon">
+            <i class="bi bi-code-slash"></i>
           </div>
 
-          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
+          <h4>
+            <a
+              href="service-website-development.html"
+              class="stretched-link">
+              Web Development
+            </a>
+          </h4>
+
+          <p>
+            Creating responsive and robust websites tailored to your business needs.
+          </p>
+
         </div>
 
       </div>
 
-    </section><!-- /Why Us Section -->
-  <!-- Services Section -->
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="linear-text-gradient">Services</h2>
-        <p>Your Partner in Digital Transformation</p>
-      </div><!-- End Section Title -->
+      <!-- Service 2 -->
+      <div
+        class="col-xl-3 col-md-6 d-flex"
+        data-aos="fade-up"
+        data-aos-delay="200">
 
-      <div class="container">
+        <div class="service-item position-relative">
 
-        <div class="row gy-4">
+          <div class="icon">
+            <i class="bi bi-phone"></i>
+          </div>
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-               <i class="bi bi-code-slash"></i>
+          <h4>
+            <a
+              href="service-Mobile-app-development.html"
+              class="stretched-link">
+              Mobile App Development
+            </a>
+          </h4>
+
+          <p>
+            Building intuitive and high-performance mobile apps for iOS and Android.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Service 3 -->
+      <div
+        class="col-xl-3 col-md-6 d-flex"
+        data-aos="fade-up"
+        data-aos-delay="300">
+
+        <div class="service-item position-relative">
+
+          <div class="icon">
+            <i class="bi bi-cloud"></i>
+          </div>
+
+          <h4>
+            <a
+              href="service-software-development.html"
+              class="stretched-link">
+              Bespoke Software Development
+            </a>
+          </h4>
+
+          <p>
+            Tailored software solutions designed to fit your unique business needs, workflows, and goals.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Service 4 -->
+      <div
+        class="col-xl-3 col-md-6 d-flex"
+        data-aos="fade-up"
+        data-aos-delay="400">
+
+        <div class="service-item position-relative">
+
+          <div class="icon">
+            <i class="bi bi-palette"></i>
+          </div>
+
+          <h4>
+            <a
+              href="service-Branding-Solutions.html"
+              class="stretched-link">
+              Distinctive Branding
+            </a>
+          </h4>
+
+          <p>
+            Create a memorable brand identity that stands out, connects with your audience, and leaves a lasting impression.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     SKILLS
+======================================================= -->
+
+<section id="skills" class="skills section">
+
+  <div
+    class="container"
+    data-aos="fade-up"
+    data-aos-delay="100">
+
+    <div class="row">
+
+      <div class="col-lg-6 d-flex align-items-center">
+
+        <img
+          src="assets/img/illustration/illustration-10.webp"
+          class="img-fluid"
+          alt="Web development illustration"
+          loading="lazy">
+
+      </div>
+
+      <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+        <h3>
+          Building Powerful Websites That Drive Business Growth
+        </h3>
+
+        <p class="fst-italic">
+          At Web Development UK, we create modern, responsive and high-performing websites that help businesses establish a strong online presence and connect with their target audience. Founded in 2022, we have successfully delivered approximately 200 projects, bringing together creative design, technical development and business-focused thinking to deliver digital solutions tailored to our clients' needs.
+        </p>
+
+
+        <div class="skills-content skills-animation">
+
+          <div class="progress">
+
+            <span class="skill">
+              <span>Client Satisfaction Rate</span>
+              <i class="val">100%</i>
+            </span>
+
+            <div class="progress-bar-wrap">
+
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100">
               </div>
-              <h4><a href="service-website-development.html" class="stretched-link">Web Development</a></h4>
-              <p>Creating responsive and robust websites tailored to your business needs.</p>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-phone"></i>
+            </div>
+
+          </div>
+
+
+          <div class="progress">
+
+            <span class="skill">
+              <span>On-time Delivery</span>
+              <i class="val">90%</i>
+            </span>
+
+            <div class="progress-bar-wrap">
+
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100">
               </div>
-              <h4><a href="service-Mobile-app-development.html" class="stretched-link">Mobile App Development</a></h4>
-              <p>Building intuitive and high-performance mobile apps for iOS and Android.</p>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-               <i class="bi bi-cloud"></i>
+            </div>
+
+          </div>
+
+
+          <div class="progress">
+
+            <span class="skill">
+              <span>Skilled Workforce</span>
+              <i class="val">95%</i>
+            </span>
+
+            <div class="progress-bar-wrap">
+
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100">
               </div>
-                <h4><a href="service-software-development.html" class="stretched-link">Bespoke Software Development</a></h4>
-              <p>Tailored software solutions designed to fit your unique business needs, workflows, and goals.
-</p>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-palette"></i>
+            </div>
+
+          </div>
+
+
+          <div class="progress">
+
+            <span class="skill">
+              <span>SEO Ratings</span>
+              <i class="val">90%</i>
+            </span>
+
+            <div class="progress-bar-wrap">
+
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100">
               </div>
-              <h4><a href="service-Branding-Solutions.html" class="stretched-link">Distinctive Brading</a></h4>
-              <p>Create a memorable brand identity that stands out, connects with your audience, and leaves a lasting impression.
 
-</p>
             </div>
-          </div><!-- End Service Item -->
+
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Services Section -->
- 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  </div>
 
-        <div class="row">
+</section>
 
-          <div class="col-lg-6 d-flex align-items-center">
-            <img src="assets/img/illustration/illustration-10.webp" class="img-fluid" alt="">
+
+<!-- ======================================================
+     WORK PROCESS
+======================================================= -->
+
+<section
+  id="work-process"
+  class="work-process section">
+
+  <div
+    class="container section-title"
+    data-aos="fade-up">
+
+    <h2 class="linear-text-gradient">
+      Work Process
+    </h2>
+
+    <p>
+      The Website Development Process is a structured approach used to plan, design, develop, test, launch, and maintain a website. It ensures that the website is functional, user-friendly, responsive, secure, and aligned with the organization’s goals.
+    </p>
+
+  </div>
+
+  <div
+    class="container"
+    data-aos="fade-up"
+    data-aos-delay="100">
+
+    <div class="row gy-5">
+
+      <!-- Step 1 -->
+      <div
+        class="col-lg-4"
+        data-aos="fade-up"
+        data-aos-delay="200">
+
+        <div class="steps-item">
+
+          <div class="steps-image">
+
+            <img
+              src="assets/img/steps/steps-1.webp"
+              alt="Research and analysis"
+              class="img-fluid"
+              loading="lazy">
+
           </div>
 
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <div class="steps-content">
 
-            <h3>Building Powerful Websites That Drive Business Growth</h3>
-            <p class="fst-italic">
-              At Web Development UK, we create modern, responsive and high-performing websites
-that help businesses establish a strong online presence and connect with their target
-audience. Founded in 2022, we have successfully delivered approximately 200 projects,
-bringing together creative design, technical development and business-focused thinking to
-deliver digital solutions tailored to our clients' needs.
+            <div class="steps-number">
+              01
+            </div>
 
+            <h3>
+              Research &amp; Analysis
+            </h3>
+
+            <p>
+              We begin by understanding your business and requirements, then plan, design, develop, and test your website across devices and browsers. Throughout the project, we maintain clear communication, share progress, and incorporate your feedback at key stages before launch.
             </p>
 
-            <div class="skills-content skills-animation">
-
-              <div class="progress">
-                <span class="skill"><span>Client Satisfaction Rate</span> <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>On-time Delivery</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Skilled Workforce</span> <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>SEO Ratings</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-   
-
-    <!-- Work Process Section -->
-    <section id="work-process" class="work-process section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="linear-text-gradient">Work Process</h2>
-        <p>The Website Development Process is a structured approach used to plan, design, develop, test, launch, and maintain a website. It ensures that the website is functional, user-friendly, responsive, secure, and aligned with the organization’s goals.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-5">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="assets/img/steps/steps-1.webp" alt="Step 1" class="img-fluid" loading="lazy">
-              </div>
-              <div class="steps-content">
-                <div class="steps-number">01</div>
-                <h3>Research &amp; Analysis</h3>
-                <p>We begin by understanding your business and requirements, then plan, design, develop, and test your website across devices and browsers. Throughout the project, we maintain clear communication, share progress, and incorporate your feedback at key stages before launch.</p>
-                <!-- <div class="steps-features">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Market Research</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Data Analysis</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>User Feedback</span>
-                  </div>
-                </div> -->
-              </div>
-            </div><!-- End Steps Item -->
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="assets/img/steps/steps-2.webp" alt="Step 2" class="img-fluid" loading="lazy">
-              </div>
-              <div class="steps-content">
-                <div class="steps-number">02</div>
-                <h3>Design &amp; Planning</h3>
-                <p>Design and Planning is the process of defining the overall structure, requirements, resources, and
-                  approach needed to successfully execute a project.</p>
-                <!-- <div class="steps-features">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Wireframing</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>UI/UX Design</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Prototyping</span>
-                  </div>
-                </div> -->
-              </div>
-            </div><!-- End Steps Item -->
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="assets/img/steps/steps-3.webp" alt="Step 3" class="img-fluid" loading="lazy">
-              </div>
-              <div class="steps-content">
-                <div class="steps-number">03</div>
-                <h3>Development &amp; Launch</h3>
-                <p>Whether you are launching a new business, expanding your online presence or upgrading
-                  an existing website, Web Development UK can help you turn your ideas into a professional
-                  digital experience.</p>
-                <!-- <div class="steps-features">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Development</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Testing</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Deployment</span>
-                  </div>
-                </div> -->
-              </div>
-            </div><!-- End Steps Item -->
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Work Process Section -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
+      <!-- Step 2 -->
+      <div
+        class="col-lg-4"
+        data-aos="fade-up"
+        data-aos-delay="300">
 
-      <img src="assets/img/bg/bg-8.webp" alt="">
+        <div class="steps-item">
 
-      <div class="container">
+          <div class="steps-image">
 
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-9 text-center text-xl-start">
-            <h3>Let's Develop Your Software Solution</h3>
-            <p>Whether you need a business application, a SaaS platform or a tailored system to improve your operations, Web Development UK can help turn your requirements into a practical software solution.Get in touch with our team to discuss your software development project and explore how custom technology can support your business goals.</p>
-          </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="Contact.html">Get a Quote</a>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
-      <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="linear-text-gradient">Portfolio</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Branding</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul>
-          <!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-portrait-1.webp" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-1.webp" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/portfolio/portfolio-3.webp" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>883 Police</h4>
-                <p>Clothing Brand</p>
-                <!-- <a href="assets/img/portfolio/port-1.png" title="883 Police" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="https://www.883police.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Unicorn Cosmetics</h4>
-                <p>Premium Cosmetic Brand</p>
-                <!-- <a href="assets/img/portfolio/port-2.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="https://unicorncosmetics.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/6.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>viandco</h4>
-                <p>Rent and Lease your property</p>
-                <!-- <a href="assets/img/portfolio/portfolio-portrait-3.webp" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="https://viandco.co.uk/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/4.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Selfridges </h4>
-                <p>Premium Apparel Brand</p>
-                <!-- <a href="assets/img/portfolio/port-4.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="https://www.selfridges.com/GB/en/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Paul Brown England</h4>
-                <p>Shirts, trousers and trench coats — cut and sewn by hand in our Suffolk factory. Built to last a lifetime.</p>
-                <!-- <a href="assets/img/portfolio/port-3.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="https://www.paulbrownengland.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/7.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Black Pearl Shop</h4>
-                <p>Women Fashion Brand</p>
-                <!-- <a href="assets/img/portfolio/portfolio-9.webp" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                <a href="https://blackpearlshop.co.uk/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section d-none">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="linear-text-gradient">Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person-m-7.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person-f-8.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person-m-6.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person-f-4.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
- 
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials light-background section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="linear-text-gradient">Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
+            <img
+              src="assets/img/steps/steps-2.webp"
+              alt="Design and planning"
+              class="img-fluid"
+              loading="lazy">
 
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
 
-      </div>
+          <div class="steps-content">
 
-    </section><!-- /Testimonials Section -->
-
-    <!-- Faq 2 Section -->
-    <section id="faq-2" class="faq-2 section light-background d-none">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+            <div class="steps-number">
+              02
             </div>
+
+            <h3>
+              Design &amp; Planning
+            </h3>
+
+            <p>
+              Design and Planning is the process of defining the overall structure, requirements, resources, and approach needed to successfully execute a project.
+            </p>
 
           </div>
 
@@ -1078,348 +874,1218 @@ deliver digital solutions tailored to our clients' needs.
 
       </div>
 
-    </section><!-- /Faq 2 Section -->
 
-    <!-- Recent Blog Postst Section -->
-    <section id="recent-blog-postst" class="d-none recent-blog-postst section light-background ">
+      <!-- Step 3 -->
+      <div
+        class="col-lg-4"
+        data-aos="fade-up"
+        data-aos-delay="400">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Blog Posts</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <div class="steps-item">
 
-      <div class="container">
+          <div class="steps-image">
 
-        <div class="row gy-5">
+            <img
+              src="assets/img/steps/steps-3.webp"
+              alt="Development and launch"
+              class="img-fluid"
+              loading="lazy">
 
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-post-1.webp" class="img-fluid" alt="">
-                <span class="post-date">December 12</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Why Professional Website Development Is Essential for Business Growth in 2026</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-post-2.webp" class="img-fluid" alt="">
-                <span class="post-date">July 17</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="why-professional-website-development-matters.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-post-3.webp" class="img-fluid" alt="">
-                <span class="post-date">September 05</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Recent Blog Postst Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="linear-text-gradient">Contact</h2>
-        <p>Have a project in mind or need expert guidance? Get in touch with us and let’s turn your ideas into impactful solutions.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Southwark
-32 Blackfriars Road
-London, SE1 8PB</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p><a href="mailto:info@webdevelopmentuk.com">info@webdevelopmentuk.com</a></p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
           </div>
 
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+          <div class="steps-content">
 
-                <div class="col-md-12">
-                  <label for="name-field" class="pb-2"><span class="text-danger">*</span> Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-<div class="col-md-6">
-                  <label for="contact-number" class="pb-2"><span class="text-danger">*</span> Your Contact Number</label>
-                  <input type="tel" class="form-control" name="contact-number" id="contact-number" required="">
-                </div>
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2"><span class="text-danger">*</span> Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
+            <div class="steps-number">
+              03
+            </div>
 
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2"><span class="text-danger">*</span> Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
+            <h3>
+              Development &amp; Launch
+            </h3>
 
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2"><span class="text-danger">*</span> Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
+            <p>
+              Whether you are launching a new business, expanding your online presence or upgrading an existing website, Web Development UK can help you turn your ideas into a professional digital experience.
+            </p>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     CALL TO ACTION
+======================================================= -->
+
+<section
+  id="call-to-action"
+  class="call-to-action section dark-background">
+
+  <img
+    src="assets/img/bg/bg-8.webp"
+    alt=""
+    loading="lazy">
+
+  <div class="container">
+
+    <div
+      class="row"
+      data-aos="zoom-in"
+      data-aos-delay="100">
+
+      <div class="col-xl-9 text-center text-xl-start">
+
+        <h3>
+          Let's Develop Your Software Solution
+        </h3>
+
+        <p>
+          Whether you need a business application, a SaaS platform or a tailored system to improve your operations, Web Development UK can help turn your requirements into a practical software solution. Get in touch with our team to discuss your software development project and explore how custom technology can support your business goals.
+        </p>
+
+      </div>
+
+      <div class="col-xl-3 cta-btn-container text-center">
+
+        <a
+          class="cta-btn align-middle"
+          href="Contact.html">
+          Get a Quote
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     PORTFOLIO
+======================================================= -->
+
+<section
+  id="portfolio"
+  class="portfolio section">
+
+  <div
+    class="container section-title"
+    data-aos="fade-up">
+
+    <h2 class="linear-text-gradient">
+      Portfolio
+    </h2>
+
+  </div>
+
+  <div class="container">
+
+    <div
+      class="isotope-layout"
+      data-default-filter="*"
+      data-layout="masonry"
+      data-sort="original-order">
+
+      <ul
+        class="portfolio-filters isotope-filters"
+        data-aos="fade-up"
+        data-aos-delay="100">
+
+        <li
+          data-filter="*"
+          class="filter-active">
+          All
+        </li>
+
+        <li data-filter=".filter-app">
+          App
+        </li>
+
+        <li data-filter=".filter-product">
+          Branding
+        </li>
+
+        <li data-filter=".filter-branding">
+          Web
+        </li>
+
+      </ul>
+
+
+      <div
+        class="row gy-4 isotope-container"
+        data-aos="fade-up"
+        data-aos-delay="200">
+
+        <!-- Portfolio 1 -->
+        <div
+          class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+
+          <img
+            src="assets/img/portfolio/1.png"
+            class="img-fluid"
+            alt="883 Police"
+            loading="lazy">
+
+          <div class="portfolio-info">
+
+            <h4>
+              883 Police
+            </h4>
+
+            <p>
+              Clothing Brand
+            </p>
+
+            <a
+              href="https://www.883police.com/"
+              title="More Details"
+              class="details-link"
+              target="_blank"
+              rel="noopener">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Portfolio 2 -->
+        <div
+          class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+
+          <img
+            src="assets/img/portfolio/2.png"
+            class="img-fluid"
+            alt="Unicorn Cosmetics"
+            loading="lazy">
+
+          <div class="portfolio-info">
+
+            <h4>
+              Unicorn Cosmetics
+            </h4>
+
+            <p>
+              Premium Cosmetic Brand
+            </p>
+
+            <a
+              href="https://unicorncosmetics.com/"
+              title="More Details"
+              class="details-link"
+              target="_blank"
+              rel="noopener">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Portfolio 3 -->
+        <div
+          class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+
+          <img
+            src="assets/img/portfolio/6.png"
+            class="img-fluid"
+            alt="viandco"
+            loading="lazy">
+
+          <div class="portfolio-info">
+
+            <h4>
+              viandco
+            </h4>
+
+            <p>
+              Rent and Lease your property
+            </p>
+
+            <a
+              href="https://viandco.co.uk/"
+              title="More Details"
+              class="details-link"
+              target="_blank"
+              rel="noopener">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Portfolio 4 -->
+        <div
+          class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+
+          <img
+            src="assets/img/portfolio/4.png"
+            class="img-fluid"
+            alt="Selfridges"
+            loading="lazy">
+
+          <div class="portfolio-info">
+
+            <h4>
+              Selfridges
+            </h4>
+
+            <p>
+              Premium Apparel Brand
+            </p>
+
+            <a
+              href="https://www.selfridges.com/GB/en/"
+              title="More Details"
+              class="details-link"
+              target="_blank"
+              rel="noopener">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Portfolio 5 -->
+        <div
+          class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+
+          <img
+            src="assets/img/portfolio/3.png"
+            class="img-fluid"
+            alt="Paul Brown England"
+            loading="lazy">
+
+          <div class="portfolio-info">
+
+            <h4>
+              Paul Brown England
+            </h4>
+
+            <p>
+              Shirts, trousers and trench coats — cut and sewn by hand in our Suffolk factory. Built to last a lifetime.
+            </p>
+
+            <a
+              href="https://www.paulbrownengland.com/"
+              title="More Details"
+              class="details-link"
+              target="_blank"
+              rel="noopener">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Portfolio 6 -->
+        <div
+          class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+
+          <img
+            src="assets/img/portfolio/7.png"
+            class="img-fluid"
+            alt="Black Pearl Shop"
+            loading="lazy">
+
+          <div class="portfolio-info">
+
+            <h4>
+              Black Pearl Shop
+            </h4>
+
+            <p>
+              Women Fashion Brand
+            </p>
+
+            <a
+              href="https://blackpearlshop.co.uk/"
+              title="More Details"
+              class="details-link"
+              target="_blank"
+              rel="noopener">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     TESTIMONIALS
+======================================================= -->
+
+<section
+  id="testimonials"
+  class="testimonials light-background section">
+
+  <div
+    class="container section-title"
+    data-aos="fade-up">
+
+    <h2 class="linear-text-gradient">
+      Testimonials
+    </h2>
+
+    <p>
+      What our clients say about working with us.
+    </p>
+
+  </div>
+
+  <div
+    class="container"
+    data-aos="fade-up"
+    data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+
+      <script
+        type="application/json"
+        class="swiper-config">
+
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+
+      </script>
+
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide">
+
+          <div class="testimonial-item">
+
+            <img
+              src="assets/img/person/person-m-9.webp"
+              class="testimonial-img"
+              alt="Saul Goodman"
+              loading="lazy">
+
+            <h3>
+              Saul Goodman
+            </h3>
+
+            <h4>
+              CEO &amp; Founder
+            </h4>
+
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide">
+
+          <div class="testimonial-item">
+
+            <img
+              src="assets/img/person/person-f-5.webp"
+              class="testimonial-img"
+              alt="Sara Wilsson"
+              loading="lazy">
+
+            <h3>
+              Sara Wilsson
+            </h3>
+
+            <h4>
+              Designer
+            </h4>
+
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide">
+
+          <div class="testimonial-item">
+
+            <img
+              src="assets/img/person/person-f-12.webp"
+              class="testimonial-img"
+              alt="Jena Karlis"
+              loading="lazy">
+
+            <h3>
+              Jena Karlis
+            </h3>
+
+            <h4>
+              Store Owner
+            </h4>
+
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Testimonial 4 -->
+        <div class="swiper-slide">
+
+          <div class="testimonial-item">
+
+            <img
+              src="assets/img/person/person-m-12.webp"
+              class="testimonial-img"
+              alt="Matt Brandon"
+              loading="lazy">
+
+            <h3>
+              Matt Brandon
+            </h3>
+
+            <h4>
+              Freelancer
+            </h4>
+
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Testimonial 5 -->
+        <div class="swiper-slide">
+
+          <div class="testimonial-item">
+
+            <img
+              src="assets/img/person/person-m-13.webp"
+              class="testimonial-img"
+              alt="John Larson"
+              loading="lazy">
+
+            <h3>
+              John Larson
+            </h3>
+
+            <h4>
+              Entrepreneur
+            </h4>
+
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore.
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ======================================================
+     CONTACT
+======================================================= -->
+
+<section id="contact" class="contact section">
+
+  <div
+    class="container section-title"
+    data-aos="fade-up">
+
+    <h2 class="linear-text-gradient">
+      Contact
+    </h2>
+
+    <p>
+      Have a project in mind or need expert guidance? Get in touch with us and let’s turn your ideas into impactful solutions.
+    </p>
+
+  </div>
+
+
+  <div
+    class="container"
+    data-aos="fade-up"
+    data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <!-- Contact Information -->
+      <div class="col-lg-5">
+
+        <div class="info-wrap">
+
+          <div
+            class="info-item d-flex"
+            data-aos="fade-up"
+            data-aos-delay="200">
+
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+
+            <div>
+
+              <h3>
+                Address
+              </h3>
+
+              <p>
+                Southwark<br>
+                32 Blackfriars Road<br>
+                London, SE1 8PB
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div
+            class="info-item d-flex"
+            data-aos="fade-up"
+            data-aos-delay="300">
+
+            <i class="bi bi-telephone flex-shrink-0"></i>
+
+            <div>
+
+              <h3>
+                Call Us
+              </h3>
+
+              <p>
+                +1 5589 55488 55
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div
+            class="info-item d-flex"
+            data-aos="fade-up"
+            data-aos-delay="400">
+
+            <i class="bi bi-envelope flex-shrink-0"></i>
+
+            <div>
+
+              <h3>
+                Email Us
+              </h3>
+
+              <p>
+                <a href="mailto:info@webdevelopmentuk.com">
+                  info@webdevelopmentuk.com
+                </a>
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- Replace this demo map with the correct London location -->
+          <iframe
+            src="https://www.google.com/maps?q=32%20Blackfriars%20Road,%20London,%20SE1%208PB&output=embed"
+            frameborder="0"
+            style="border:0;width:100%;height:270px;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+        </div>
+
+      </div>
+
+
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+
+        <form
+          action="forms/contact.php"
+          method="post"
+          class="php-email-form"
+          data-aos="fade-up"
+          data-aos-delay="200">
+
+          <div class="row gy-4">
+
+            <div class="col-md-12">
+
+              <label
+                for="name-field"
+                class="pb-2">
+
+                <span class="text-danger">*</span>
+                Name
+
+              </label>
+
+              <input
+                type="text"
+                name="name"
+                id="name-field"
+                class="form-control"
+                required>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+              <label
+                for="contact-number"
+                class="pb-2">
+
+                <span class="text-danger">*</span>
+                Your Contact Number
+
+              </label>
+
+              <input
+                type="tel"
+                class="form-control"
+                name="contact-number"
+                id="contact-number"
+                required>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+              <label
+                for="email-field"
+                class="pb-2">
+
+                <span class="text-danger">*</span>
+                Your Email
+
+              </label>
+
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email-field"
+                required>
+
+            </div>
+
+
+            <div class="col-md-12">
+
+              <label
+                for="subject-field"
+                class="pb-2">
+
+                <span class="text-danger">*</span>
+                Subject
+
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject-field"
+                required>
+
+            </div>
+
+
+            <div class="col-md-12">
+
+              <label
+                for="message-field"
+                class="pb-2">
+
+                <span class="text-danger">*</span>
+                Message
+
+              </label>
+
+              <textarea
+                class="form-control"
+                name="message"
+                rows="10"
+                id="message-field"
+                required></textarea>
+
+            </div>
+
+
+            <div class="col-md-12 text-center">
+
+              <div class="loading">
+                Loading
+              </div>
+
+              <div class="error-message"></div>
+
+              <div class="sent-message">
+                Your message has been sent. Thank you!
+              </div>
+
+              <button type="submit">
+                Send Message
+              </button>
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+```
 
   </main>
- <div id="footer-container"></div>
+
+  <!-- Footer -->
+
+  <div id="footer-container"></div>
+
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<a
+ href="#"
+ id="scroll-top"
+ class="scroll-top d-flex align-items-center justify-content-center"
+ aria-label="Scroll to top">
+
+```
+<i class="bi bi-arrow-up-short"></i>
+```
+
+  </a>
 
   <!-- Preloader -->
+
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-   <script src="assets/js/jquery-2.1.1.min.js"></script>
+  <!-- ======================================================
+       JAVASCRIPT
+  ======================================================= -->
+
+  <!-- jQuery -->
+
+  <script src="assets/js/jquery-2.1.1.min.js"></script>
+
+  <!-- Bootstrap -->
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Vendor JS -->
+
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
   <script src="assets/vendor/aos/aos.js"></script>
+
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
+
   <script src="assets/js/main.js"></script>
- <script>
+
+  <!-- ======================================================
+       HEADER / FOOTER LOADER
+  ======================================================= -->
+
+  <script>
     function loadComponent(id, file) {
-      fetch(file)
+      return fetch(file)
         .then(response => {
-          if (!response.ok) throw new Error("Network response was not ok");
+          if (!response.ok) {
+            throw new Error(`Failed to load ${file}: ${response.status}`);
+          }
+
           return response.text();
         })
         .then(data => {
-          document.getElementById(id).innerHTML = data;
+          const element = document.getElementById(id);
+
+          if (!element) {
+            throw new Error(`Element #${id} not found`);
+          }
+
+          element.innerHTML = data;
+
+          return element;
         })
-        .catch(error => console.error("Error loading component:", error));
+        .catch(error => {
+          console.error(`Error loading ${file}:`, error);
+        });
     }
 
-    // Load components on page load
-    loadComponent("header-container", "header.html");
-    loadComponent("footer-container", "footer.html");
-     loadComponent("carousel", "carousel-main.html");
+    document.addEventListener("DOMContentLoaded", function () {
+
+      loadComponent("header-container", "header.html");
+      loadComponent("footer-container", "footer.html");
+
+    });
   </script>
-<script>
-    (function() {
-      const carouselElement = document.querySelector('#heroCarousel');
-      const progressBar = carouselElement.querySelector('.animated-progress');
-      const slideCounter = carouselElement.querySelector('.slide-counter');
-      const totalSlides = carouselElement.querySelectorAll('.carousel-item').length;
-      let animationDuration = 8000; // match data-bs-interval (ms)
-      let progressAnimationFrame;
+
+ 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const carouselElement = document.getElementById("heroCarousel");
+
+      if (!carouselElement) {
+        return;
+      }
+
+      const progressBar =
+        carouselElement.querySelector(".animated-progress");
+
+      const slideCounter =
+        carouselElement.querySelector(".slide-counter");
+
+      const slides =
+        carouselElement.querySelectorAll(".carousel-item");
+
+      if (!progressBar || !slideCounter || !slides.length) {
+        return;
+      }
+
+      const totalSlides = slides.length;
+      const animationDuration = 8000;
+
+      let progressAnimationFrame = null;
       let animationStartTimestamp = null;
       let paused = false;
 
-      // Progress bar animation
-      function progressStep(timestamp) {
-        if (!animationStartTimestamp) animationStartTimestamp = timestamp;
 
-        const elapsed = timestamp - animationStartTimestamp;
-        let progressPercent = Math.min((elapsed / animationDuration) * 100, 100);
-        progressBar.style.width = progressPercent + '%';
+      function progressStep(timestamp) {
+
+        if (paused) {
+          return;
+        }
+
+        if (!animationStartTimestamp) {
+          animationStartTimestamp = timestamp;
+        }
+
+        const elapsed =
+          timestamp - animationStartTimestamp;
+
+        const progressPercent =
+          Math.min(
+            (elapsed / animationDuration) * 100,
+            100
+          );
+
+        progressBar.style.width =
+          progressPercent + "%";
 
         if (progressPercent < 100) {
-          progressAnimationFrame = requestAnimationFrame(progressStep);
-        } else {
-          // Do nothing, carousel slide changes automatically
+
+          progressAnimationFrame =
+            requestAnimationFrame(progressStep);
+
         }
+
       }
+
 
       function startProgress() {
+
         cancelAnimationFrame(progressAnimationFrame);
-        progressBar.style.width = '0%';
+
         animationStartTimestamp = null;
-        progressAnimationFrame = requestAnimationFrame(progressStep);
+        progressBar.style.width = "0%";
+
+        paused = false;
+
+        progressAnimationFrame =
+          requestAnimationFrame(progressStep);
+
       }
+
 
       function pauseProgress() {
+
+        if (paused) {
+          return;
+        }
+
         paused = true;
-        cancelAnimationFrame(progressAnimationFrame);
+
+        cancelAnimationFrame(
+          progressAnimationFrame
+        );
+
       }
+
 
       function resumeProgress() {
-        if (!paused) return;
+
+        if (!paused) {
+          return;
+        }
+
         paused = false;
-        progressAnimationFrame = requestAnimationFrame(progressStep);
+
+        const currentWidth =
+          parseFloat(progressBar.style.width) || 0;
+
+        animationStartTimestamp =
+          performance.now() -
+          (currentWidth / 100) * animationDuration;
+
+        progressAnimationFrame =
+          requestAnimationFrame(progressStep);
+
       }
 
-      // Update slide counter and reset animations on slide change
-      carouselElement.addEventListener('slide.bs.carousel', event => {
-        const newIndex = event.to + 1;
-        slideCounter.textContent = (newIndex < 10 ? '0' : '') + newIndex + ' / ' + (totalSlides < 10 ? '0' : '') + totalSlides;
 
-        // Reset animations on new slide content
-        const newSlide = event.relatedTarget;
-        const fadeUpElems = newSlide.querySelectorAll('.animate-fadeup');
-        fadeUpElems.forEach((el) => {
-          el.style.opacity = 0;
-          el.style.transform = 'translateY(18px)';
-          void el.offsetWidth; // trigger reflow
-          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
-          el.style.opacity = 1;
-          el.style.transform = 'translateY(0)';
+      function updateCounter(index) {
+
+        const current =
+          String(index + 1).padStart(2, "0");
+
+        const total =
+          String(totalSlides).padStart(2, "0");
+
+        slideCounter.textContent =
+          `${current} / ${total}`;
+
+      }
+
+
+      function animateSlide(slide) {
+
+        if (!slide) {
+          return;
+        }
+
+        const elements =
+          slide.querySelectorAll(".animate-fadeup");
+
+        elements.forEach(element => {
+
+          element.style.opacity = "0";
+          element.style.transform =
+            "translateY(18px)";
+
+          void element.offsetWidth;
+
+          element.style.transition =
+            "opacity 0.7s ease, transform 0.7s ease";
+
+          element.style.opacity = "1";
+          element.style.transform =
+            "translateY(0)";
+
         });
 
-        // Restart progress bar animation
-        startProgress();
-      });
+      }
 
-      // Pause progress on mouse enter and focus (accessibility)
-      carouselElement.addEventListener('mouseenter', pauseProgress);
-      carouselElement.addEventListener('mouseleave', resumeProgress);
-      carouselElement.addEventListener('focusin', pauseProgress);
-      carouselElement.addEventListener('focusout', resumeProgress);
-      carouselElement.addEventListener('touchstart', pauseProgress, {passive: true});
-      carouselElement.addEventListener('touchend', resumeProgress, {passive: true});
 
-      // Start initially
+      carouselElement.addEventListener(
+        "slide.bs.carousel",
+        function (event) {
+
+          updateCounter(event.to);
+
+          animateSlide(event.relatedTarget);
+
+          startProgress();
+
+        }
+      );
+
+
+      carouselElement.addEventListener(
+        "mouseenter",
+        pauseProgress
+      );
+
+      carouselElement.addEventListener(
+        "mouseleave",
+        resumeProgress
+      );
+
+
+      carouselElement.addEventListener(
+        "touchstart",
+        pauseProgress,
+        { passive: true }
+      );
+
+      carouselElement.addEventListener(
+        "touchend",
+        resumeProgress,
+        { passive: true }
+      );
+
+
+      carouselElement.addEventListener(
+        "focusin",
+        pauseProgress
+      );
+
+
+      carouselElement.addEventListener(
+        "focusout",
+        function (event) {
+
+          if (
+            !carouselElement.contains(
+              event.relatedTarget
+            )
+          ) {
+            resumeProgress();
+          }
+
+        }
+      );
+
+
+      updateCounter(0);
+      animateSlide(
+        carouselElement.querySelector(
+          ".carousel-item.active"
+        )
+      );
+
       startProgress();
 
-
-      // Dark/light toggle functionality
-      const toggle = document.getElementById('darkToggle');
-      if (toggle) {
-        toggle.addEventListener('click', () => {
-          if(document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            document.body.classList.add('light');
-          } else {
-            document.documentElement.classList.add('dark');
-            document.body.classList.remove('light');
-          }
-        });
-        toggle.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            toggle.click();
-          }
-        });
-      }
-
-    })();
+    });
   </script>
 
 </body>
