@@ -261,7 +261,7 @@ h6 {
     padding: 18px 15px;
     font-size: 15px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -938,6 +938,8 @@ section,
 }
 
 @media (max-width: 640px) {
+  .header .logo img {
+    max-height: 46px !important;}
   .hero h1 {
     font-size: 28px;
     line-height: 36px;

@@ -74,8 +74,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2B68D1", en
     #heroCarousel {
      position: relative;
     max-width: 1200px;
-    margin: 4rem auto 3rem;
-    padding: 3rem 1rem;
+    margin: 4rem auto 1rem;
+    padding: 1rem;
     }
     /* Override Bootstrap carousel-fade slides for custom animation */
     #heroCarousel .carousel-item {
@@ -177,7 +177,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2B68D1", en
       border: none;
       cursor: pointer;
       background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
-      color: #fff;
+      color: #fff !important;
       text-shadow:
         0 0 8px var(--neon-cyan),
         0 0 16px var(--neon-purple);
@@ -195,6 +195,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2B68D1", en
     .btn-glow-primary:focus {
       filter: brightness(1.2);
       transform: scale(1.05);
+       color: #fff !important;
       box-shadow:
         0 0 20px var(--neon-cyan),
         0 0 70px var(--neon-purple);
